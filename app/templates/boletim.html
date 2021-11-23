@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<table border = 1>
+    {% for chave, valor in boletim.items() %}
+       <tr>
+          <th> {{ chave|title }} </th>
+          <td> {{ valor }} </td>
+       </tr>
+    {% endfor %}
+ </table>       
+{% endblock %}
