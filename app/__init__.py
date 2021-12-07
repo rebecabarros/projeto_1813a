@@ -6,4 +6,4 @@ bootstrap = Bootstrap(app)
 app.config['SECRET_KEY'] = 'batatinha123'
 
 #importar as views
-from app import views
+from app import views, views_crud

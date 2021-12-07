@@ -7,3 +7,11 @@ class ContatoForm(FlaskForm):
     email = StringField("Email: ", validators=[DataRequired(), Email()])
     mensagem = TextAreaField("Mensagem: ", validators=[DataRequired()])
     submit = SubmitField("Enviar")
+
+class GravadoraForm (FlaskForm):
+    nome = StringField('Nome: ', validators=[DataRequired()])
+    endereco = StringField('Endereço: ')
+    telefone = StringField('Telefone: ')
+    site = StringField('Site: ', validators=[URL()])
+    contato = StringField('Contato: ')
+    submit = SubmitField('Salvar')
